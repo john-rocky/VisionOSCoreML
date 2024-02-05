@@ -6,16 +6,25 @@
 //
 
 import SwiftUI
-import RealityKit
-import RealityKitContent
 
 struct ContentView: View {
+    @State private var inputImage: UIImage = UIImage(named: "myFace")!
+    @ObservedObject var modelHandler = ModelHandler()
+
     var body: some View {
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
+                Image(uiImage: inputImage)
+                    .resizable()
+                    .scaledToFit()
+            
+            if let resultImage = modelHandler.resultImage {
+                Image(uiImage: resultImage)
+                    .resizable()
+                    .scaledToFit()
+            }
+            Button("ToAnime") {
+                modelHandler.processImage(inputImage)
+            }
         }
         .padding()
     }

@@ -13,6 +13,8 @@
 		73F04C1D2B7095D4003B86AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F04C1C2B7095D4003B86AC /* Assets.xcassets */; };
 		73F04C202B7095D4003B86AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F04C1F2B7095D4003B86AC /* Preview Assets.xcassets */; };
 		73F04C2B2B7095D4003B86AC /* VisionOSCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F04C2A2B7095D4003B86AC /* VisionOSCoreMLTests.swift */; };
+		73F04C352B70DC85003B86AC /* ModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F04C342B70DC85003B86AC /* ModelHandler.swift */; };
+		73F04C372B70DDC0003B86AC /* animegan2face_paint_512_v2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73F04C362B70DDC0003B86AC /* animegan2face_paint_512_v2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		73F04C212B7095D4003B86AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73F04C262B7095D4003B86AC /* VisionOSCoreMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOSCoreMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F04C2A2B7095D4003B86AC /* VisionOSCoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOSCoreMLTests.swift; sourceTree = "<group>"; };
+		73F04C342B70DC85003B86AC /* ModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHandler.swift; sourceTree = "<group>"; };
+		73F04C362B70DDC0003B86AC /* animegan2face_paint_512_v2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = animegan2face_paint_512_v2.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				73F04C182B7095D3003B86AC /* VisionOSCoreMLApp.swift */,
 				73F04C1A2B7095D3003B86AC /* ContentView.swift */,
+				73F04C342B70DC85003B86AC /* ModelHandler.swift */,
+				73F04C362B70DDC0003B86AC /* animegan2face_paint_512_v2.mlmodel */,
 				73F04C1C2B7095D4003B86AC /* Assets.xcassets */,
 				73F04C212B7095D4003B86AC /* Info.plist */,
 				73F04C1E2B7095D4003B86AC /* Preview Content */,
@@ -214,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73F04C372B70DDC0003B86AC /* animegan2face_paint_512_v2.mlmodel in Sources */,
+				73F04C352B70DC85003B86AC /* ModelHandler.swift in Sources */,
 				73F04C1B2B7095D3003B86AC /* ContentView.swift in Sources */,
 				73F04C192B7095D3003B86AC /* VisionOSCoreMLApp.swift in Sources */,
 			);
